@@ -1,4 +1,4 @@
-package com.example.marketplace.Supplier;
+package com.smarthousebuilder.marketplace.supplier;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

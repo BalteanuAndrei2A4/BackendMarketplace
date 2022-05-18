@@ -1,9 +1,7 @@
-package com.example.marketplace.Product;
+package com.smarthousebuilder.marketplace.product;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 import java.util.Optional;
 

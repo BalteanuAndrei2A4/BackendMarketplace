@@ -1,4 +1,4 @@
-package com.example.marketplace.supplier_item;
+package com.smarthousebuilder.marketplace.supplier_item;
 
 import org.springframework.web.bind.annotation.*;
 

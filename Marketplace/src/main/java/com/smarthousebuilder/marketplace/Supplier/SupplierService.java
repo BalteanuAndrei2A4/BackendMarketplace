@@ -1,4 +1,4 @@
-package com.example.marketplace.Supplier;
+package com.smarthousebuilder.marketplace.supplier;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

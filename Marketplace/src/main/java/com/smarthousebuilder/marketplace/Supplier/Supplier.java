@@ -1,4 +1,4 @@
-package com.example.marketplace.Supplier;
+package com.smarthousebuilder.marketplace.supplier;
 
 import javax.persistence.*;
 import java.util.Objects;

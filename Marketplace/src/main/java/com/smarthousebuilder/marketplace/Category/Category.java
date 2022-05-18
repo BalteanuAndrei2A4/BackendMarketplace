@@ -1,4 +1,4 @@
-package com.example.marketplace.Category;
+package com.smarthousebuilder.marketplace.category;
 
 import javax.persistence.*;
 
