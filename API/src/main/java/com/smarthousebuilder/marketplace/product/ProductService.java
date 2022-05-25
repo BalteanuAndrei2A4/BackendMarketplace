@@ -71,4 +71,38 @@ public class ProductService {
                         }
                 );
     }
+
+    public List<Product> getByCategoryId(Integer categoryId) {
+        boolean exists = productRepository.existsByCategoryId(categoryId);
+
+        if(!exists)
+            throw new IllegalStateException("Product with category id  " + categoryId + " doesn't exist!");
+
+        return productRepository.getAllByCategoryId(categoryId);
+
+    }
+
+    public List<Product> getByPriceRange(Double lower, Double upper) {
+        return  productRepository.findByPriceBetween(lower,upper);
+    }
+
+    public List<Product> getByString(String string) {
+
+        boolean exists = productRepository.existsByNameContaining(string);
+
+        if(!exists)
+            throw new IllegalStateException("No product containing in name "+ string);
+
+        return  productRepository.findAllByNameContaining(string);
+    }
+
+    public List<Product> getByRatingRange(Double lower, Double upper) {
+
+        boolean exists = productRepository.existsByRatingBetween(lower,upper);
+
+        if(!exists)
+            throw new IllegalStateException("No product with rating be "+ lower + " and " + upper);
+
+        return productRepository.findAllByRatingBetween(lower, upper);
+    }
 }
