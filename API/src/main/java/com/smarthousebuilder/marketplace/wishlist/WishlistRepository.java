@@ -8,4 +8,8 @@ public interface WishlistRepository extends JpaRepository<Wishlists,Integer> {
     Boolean existsByUserId(Integer userId);
 
     Wishlists findByUserId(Integer userId);
+
+
+
+
 }
